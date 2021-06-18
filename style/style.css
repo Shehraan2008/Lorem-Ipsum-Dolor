@@ -1,0 +1,90 @@
+:root {
+  --main-color: hsl(169, 36%, 42%);
+  --supporting-color: hsl(167, 41%, 20%);
+  --background-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 0%);
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #17141d;
+  color: white;
+  margin: 0;
+  padding: 0;
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+
+.main-header {
+  padding: 1em;
+  clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+  background-image: linear-gradient(#143948, #081f26);
+  margin-bottom: 1em;
+  padding-bottom: 3.5em;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+@keyframes color-rotate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+.logo:hover {
+  animation: color-rotate 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.people {
+  padding-left: 3rem;
+}
+
+.section-header {
+  padding: 3rem;
+  color: #65d099;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.people-button {
+  background-color: #143948;
+  color: white;
+  padding: 1rem;
+}
+
+table {
+  width: 100%;
+  margin-left: 3rem;
+  text-align: left;
+}
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+.list-item:hover {
+  color: yellow;
+  font-size: 1.2rem;
+}
+
+.list-item {
+  padding: 0.5rem;
+  vertical-align: top;
+}
+.table-header {
+  font-size: 1.5rem;
+}
+
+th,
+td {
+  vertical-align: text-top;
+}
